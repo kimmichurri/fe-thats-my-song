@@ -1,0 +1,17 @@
+@import url('https://fonts.googleapis.com/css?family=Audiowide|Economica|Cute+Font|Pacifico|Satisfy');
+@import 'variables';
+@import './containers/App/App';
+@import './containers/Selections/Selections';
+@import './components/Loader/Loader';
+@import './containers/SongInfo/SongInfo';
+@import './containers/Playlist/Playlist';
+@import './containers/PlaylistCard/PlaylistCard';
+@import './components/NotFound/NotFound';
+body {
+  background-image: url('./assets/max-bender-510413-unsplash.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: 0;
+  padding: 0;
+}

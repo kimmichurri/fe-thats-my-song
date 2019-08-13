@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`PlaylistCard should match the snapshot 1`] = `
+"<div className=\\"playlist-song-cards\\">
+  <h3 className=\\"playlist-songs-title\\" />
+  <p className=\\"playlist-artists-title\\" />
+  <button className=\\"remove-song-button\\" onClick={[Function: onClick]} value={[undefined]}>
+    Remove
+  </button>
+</div>"
+`;

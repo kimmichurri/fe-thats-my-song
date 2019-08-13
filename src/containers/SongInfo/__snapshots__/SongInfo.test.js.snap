@@ -1,0 +1,30 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`SongInfo should match the snapshot 1`] = `
+"<div className=\\"song-info-wrapper\\">
+  <p className=\\"song-category secondary\\">
+    Rap
+  </p>
+  <div className=\\"current-spin-wrapper\\">
+    <h3 className=\\"song-title\\">
+      current song
+    </h3>
+    <p className=\\"song-artist secondary\\">
+      current artist
+    </p>
+  </div>
+  <button onClick={[Function]} className=\\"song-info-page-buttons\\">
+    Add to Playlist
+  </button>
+  <button className=\\"song-info-page-buttons\\" value=\\"Rap\\" onClick={[Function]}>
+    Spin 
+    Rap
+     Again
+  </button>
+  <NavLink to=\\"/\\" id=\\"return-to-search-navlink\\">
+    <button className=\\"song-info-page-buttons\\">
+      Return to Search
+    </button>
+  </NavLink>
+</div>"
+`;

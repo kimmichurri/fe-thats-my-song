@@ -1,0 +1,78 @@
+.genre-selection-radio-wrapper {
+  display: flex;
+  justify-content: center;
+  margin: 10px 60px;
+}
+
+.genre-selection-labels {
+  font-family: $main-font;
+  font-size: 2.5rem;
+  font-weight: 800;
+}
+
+.inputs-wrapper {
+  color: white;
+  background: black;
+  padding: 20px;
+  border-radius: 10px;
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  &:hover {
+    box-shadow: 1px 1px 40px $hover-box-shadow;
+  }
+}
+
+label, input {
+  cursor: pointer;
+}
+
+.spin-me-button-wrapper {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 20%;
+}
+
+.please-select-category {
+  font-family: $accent-font;
+  font-size: 2rem;
+  background:  $main-pink;
+  padding: 5px 8px;
+  border-radius: 10px;
+}
+
+.spin-me-button {
+  background-color: black;
+  border: none;
+  border-radius: 50%;
+  color: white;
+  font-family: $main-font;
+  font-size: 2rem;
+  height: 200px;
+  margin-top: 3%;
+  padding: 10px 40px;
+  width: 200px;
+  &:focus {
+    outline: 2px solid #5F6E8E;
+  }
+  &:hover {
+    background-color: #120c16;
+    color: #B4A7BC;
+    cursor: pointer;
+    box-shadow: 1px 1px 40px $hover-box-shadow;
+  }
+}
+
+@media screen and (max-width: 630px) {
+  .genre-selection-labels, label {
+    font-size: 2rem;
+  }
+  .please-select-category {
+    font-size: 1.5rem;
+  }
+  .spin-me-button {
+    font-size: 1.75rem;
+  }
+}

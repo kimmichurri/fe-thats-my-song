@@ -1,0 +1,53 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Selections should match the snapshot 1`] = `
+"<section>
+  <div className=\\"genre-selection-radio-wrapper\\">
+    <div className=\\"inputs-wrapper\\">
+      <label htmlFor=\\"90s\\" className=\\"genre-selection-labels\\">
+        90s
+      </label>
+      <input type=\\"radio\\" name=\\"radio\\" id=\\"90s\\" value=\\"90s\\" onClick={[Function]} />
+    </div>
+    <div className=\\"inputs-wrapper\\">
+      <label htmlFor=\\"00s\\" className=\\"genre-selection-labels\\">
+        00s
+      </label>
+      <input type=\\"radio\\" name=\\"radio\\" id=\\"00s\\" value=\\"00s\\" onClick={[Function]} />
+    </div>
+    <div className=\\"inputs-wrapper\\">
+      <label htmlFor=\\"rap\\" className=\\"genre-selection-labels\\">
+        Rap
+      </label>
+      <input type=\\"radio\\" name=\\"radio\\" id=\\"rap\\" value=\\"Rap\\" onClick={[Function]} />
+    </div>
+    <div className=\\"inputs-wrapper\\">
+      <label htmlFor=\\"rock\\" className=\\"genre-selection-labels\\">
+        Rock
+      </label>
+      <input type=\\"radio\\" name=\\"radio\\" id=\\"rock\\" value=\\"Rock\\" onClick={[Function]} />
+    </div>
+    <div className=\\"inputs-wrapper\\">
+      <label htmlFor=\\"pop\\" className=\\"genre-selection-labels\\">
+        Pop
+      </label>
+      <input type=\\"radio\\" name=\\"radio\\" id=\\"pop\\" value=\\"Pop\\" onClick={[Function]} />
+    </div>
+    <div className=\\"inputs-wrapper\\">
+      <label htmlFor=\\"wildcard\\" className=\\"genre-selection-labels\\">
+        Wildcard
+      </label>
+      <input type=\\"radio\\" name=\\"radio\\" id=\\"wildcard\\" value=\\"Wildcard\\" onClick={[Function]} />
+    </div>
+  </div>
+  <div className=\\"spin-me-button-wrapper\\">
+    <NavLink to=\\"/song-info\\">
+      <button disabled={false} onClick={[Function]} className=\\"spin-me-button\\">
+        Take me to my 
+        Rap
+         tune!
+      </button>
+    </NavLink>
+  </div>
+</section>"
+`;

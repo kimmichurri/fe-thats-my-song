@@ -1,0 +1,60 @@
+header {
+  display: flex;
+  flex-direction: column;
+}
+
+.main-title {
+  text-align: center;
+  font-family: $title-font;
+  font-size: 5rem;
+  margin: 0% 8%;
+}
+
+.playlist-button {
+  align-self: flex-end;
+  background-color: $main-pink;
+  border-radius: 10px;
+  border: none;
+  box-shadow: 1px 0px #62243C;
+  color: white;
+  font-family: $accent-font;
+  font-size: 1.5rem;
+  padding: 10px;
+  width: 200px;
+  &:focus {
+    outline: 2px solid #5F6E8E;
+  }
+  &:hover {
+    background-color: #7B2D4B;
+    box-shadow: 1px 0px 20px $hover-box-shadow;
+    color: #B4A7BC;
+    cursor: pointer;
+  }
+}
+
+.playlist-navlink {
+  align-self: flex-end;
+  margin: 15px;
+}
+
+.headphones-icon {
+  width: 20px;
+  color: white;
+  margin-left: 8px;
+}
+
+@media screen and (max-width: 850px) {
+  .genre-selection-radio-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+@media screen and (max-width: 630px) {
+  .main-title {
+    font-size: 3.5rem;
+  }
+  .playlist-button {
+    font-size: 1.25rem;
+  }
+}
