@@ -13,16 +13,16 @@ export class Selections extends Component {
     this.props.setCurrentCategory(value);
     switch (value) {
       case 'Wildcard':
-        url = `http://voiceboxpdx.com/api/v1/songs/roulette?organization=d00d11e681934f4688fdce9cebd5afce&session=2b2bc3b9-6bbc-4a39-b147-0758264985f2`
+        url = `https://voiceboxpdx.com/api/v1/songs/roulette?organization=d00d11e681934f4688fdce9cebd5afce&session=2b2bc3b9-6bbc-4a39-b147-0758264985f2`
         this.props.fetchSongs(url)
         break;
       default: 
-        url = `http://voiceboxpdx.com/api/v1/songs/roulette?tag=${value}&organization=d00d11e681934f4688fdce9cebd5afce&session=2b2bc3b9-6bbc-4a39-b147-0758264985f2`
+        url = `https://voiceboxpdx.com/api/v1/songs/roulette?tag=${value}&organization=d00d11e681934f4688fdce9cebd5afce&session=2b2bc3b9-6bbc-4a39-b147-0758264985f2`
         this.props.fetchSongs(url)
     }
   }
 
-  // http://vbsongs.com/api/v1/songs/roulette?organization=d00d11e681934f4688fdce9cebd5afce&session=2b2bc3b9-6bbc-4a39-b147-0758264985f2&language=English
+  // https://vbsongs.com/api/v1/songs/roulette?organization=d00d11e681934f4688fdce9cebd5afce&session=2b2bc3b9-6bbc-4a39-b147-0758264985f2&language=English
 
   pickRandomSong = () => {
     let randomIndex = Math.floor(Math.random() * 10); 

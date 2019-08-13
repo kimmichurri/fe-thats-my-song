@@ -30,7 +30,7 @@ describe('Playlist', () => {
   });
 
   it('should call props function getFromPlaylist with the correct parameters', () => {
-    const url = 'http://localhost:3001/api/v1/playlist/';
+    const url = 'https://localhost:3001/api/v1/playlist/';
     wrapper.instance().goToPlaylist();
     expect(wrapper.instance().props.getFromPlaylist).toHaveBeenCalledWith(url);
   });
@@ -39,7 +39,7 @@ describe('Playlist', () => {
     const mockEvent = { target: { value: '4'} };
     const id = '4';
     const numericId = 4;
-    const url = `http://localhost:3001/api/v1/playlist/4`;
+    const url = `https://localhost:3001/api/v1/playlist/4`;
     wrapper.instance().deleteSongFromPlaylist(mockEvent);
     expect(wrapper.instance().props.deleteSong).toHaveBeenCalledWith(url, id);
     expect(wrapper.instance().props.deleteFromPlaylist).toHaveBeenCalledWith(numericId);

@@ -34,7 +34,7 @@ describe('SongInfo', () => {
   });
 
   it('should call fetchSongs with the correct URL if the value is WILDCARD', () => {
-    const url = `http://voiceboxpdx.com/api/v1/songs/roulette`;
+    const url = `https://voiceboxpdx.com/api/v1/songs/roulette`;
     const mockEvent = { target: { value: 'Wildcard' } };
     wrapper.instance().reSpinCategory(mockEvent);
     expect(wrapper.instance().props.fetchSongs).toHaveBeenCalledWith(url);
@@ -42,7 +42,7 @@ describe('SongInfo', () => {
 
   it('should call fetchSongs with the correct URL if the value is NOT WILDCARD ', () => {
     const mockEvent = { target: { value: '90s' } };
-    const url = `http://voiceboxpdx.com/api/v1/songs/roulette?tag=${mockEvent.target.value}`;
+    const url = `https://voiceboxpdx.com/api/v1/songs/roulette?tag=${mockEvent.target.value}`;
     wrapper.instance().reSpinCategory(mockEvent);
     expect(wrapper.instance().props.fetchSongs).toHaveBeenCalledWith(url);
   });
@@ -55,7 +55,7 @@ describe('SongInfo', () => {
   });
 
   it('should call sendToPlaylist with the correct parameters', () => {
-    const url = 'http://localhost:3001/api/v1/playlist/';
+    const url = 'https://localhost:3001/api/v1/playlist/';
     wrapper.instance().addToPlaylist();
     expect(wrapper.instance().props.sendToPlaylist).toHaveBeenCalledWith(url, mockProps.currentSong)
   });

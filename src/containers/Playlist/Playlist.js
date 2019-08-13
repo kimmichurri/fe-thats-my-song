@@ -10,7 +10,7 @@ import { deleteFromPlaylist } from '../../actions';
 export class Playlist extends Component {
 
   goToPlaylist = () => {
-    const url = 'http://localhost:3001/api/v1/playlist/';
+    const url = 'https://localhost:3001/api/v1/playlist/';
     this.props.getFromPlaylist(url);
   }
 
@@ -21,7 +21,7 @@ export class Playlist extends Component {
   deleteSongFromPlaylist = (e) => {
     const id = e.target.value
     const numericId = parseInt(e.target.value);
-    const url = `http://localhost:3001/api/v1/playlist/${id}`;
+    const url = `https://localhost:3001/api/v1/playlist/${id}`;
     this.props.deleteSong(url, id);
     this.props.deleteFromPlaylist(numericId);
   }
